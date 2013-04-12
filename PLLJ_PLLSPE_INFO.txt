@@ -1,0 +1,5 @@
+PLL_Name	ROVER:ROVER_INST|ROVER_altpll_sys:altpll_sys_inst|ROVER_altpll_sys_altpll_1hu2:sd1|pll7
+PLLJITTER	30
+PLLSPEmax	84
+PLLSPEmin	-53
+

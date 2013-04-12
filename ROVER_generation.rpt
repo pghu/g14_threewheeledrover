@@ -1,0 +1,373 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Peter/Desktop/DE0/ROVER/ --output-directory=C:/Users/Peter/Desktop/DE0/ROVER/ROVER/ --report-file=bsf:C:/Users/Peter/Desktop/DE0/ROVER/ROVER.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Peter/Desktop/DE0/ROVER/ROVER.qsys
+Progress: Loading ROVER/ROVER.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 12.1]
+Progress: Parameterizing module clk_50
+Progress: Adding timer [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer
+Progress: Adding key [altera_avalon_pio 12.1]
+Progress: Parameterizing module key
+Progress: Adding sw [altera_avalon_pio 12.1]
+Progress: Parameterizing module sw
+Progress: Adding led [altera_avalon_pio 12.1]
+Progress: Parameterizing module led
+Progress: Adding i2c_scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding altpll_sys [altpll 12.1]
+Progress: Parameterizing module altpll_sys
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding adc_spi_read [TERASIC_ADC_READ 1.0]
+Progress: Parameterizing module adc_spi_read
+Progress: Adding select_i2c_clk [altera_avalon_pio 12.1]
+Progress: Parameterizing module select_i2c_clk
+Progress: Adding clock_crossing_io [altera_avalon_mm_clock_crossing_bridge 12.1]
+Progress: Parameterizing module clock_crossing_io
+Progress: Adding clock_crossing_io2 [altera_avalon_mm_clock_crossing_bridge 12.1]
+Progress: Parameterizing module clock_crossing_io2
+Progress: Adding cpu [altera_nios2_qsys 12.1]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding c0 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c0
+Progress: Adding c2 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c2
+Progress: Adding c4 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c4
+Progress: Adding compass_i2c_sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module compass_i2c_sda
+Progress: Adding compass_i2c_scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module compass_i2c_scl
+Progress: Adding PWM_0 [PWM 1.0]
+Progress: Parameterizing module PWM_0
+Progress: Adding PWM_1 [PWM 1.0]
+Progress: Parameterizing module PWM_1
+Progress: Adding PWM_2 [PWM 1.0]
+Progress: Parameterizing module PWM_2
+Progress: Adding PWM_3 [PWM 1.0]
+Progress: Parameterizing module PWM_3
+Progress: Adding encoder_0a [encoder 1.0]
+Progress: Parameterizing module encoder_0a
+Progress: Adding encoder_0b [encoder 1.0]
+Progress: Parameterizing module encoder_0b
+Progress: Adding encoder_1a [encoder 1.0]
+Progress: Parameterizing module encoder_1a
+Progress: Adding encoder_1b [encoder 1.0]
+Progress: Parameterizing module encoder_1b
+Progress: Adding servo [servo 1.0]
+Progress: Parameterizing module servo
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ROVER.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: ROVER.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ROVER.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ROVER.compass_i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Peter/Desktop/DE0/ROVER/ --output-directory=C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Peter/Desktop/DE0/ROVER/ROVER.sopcinfo --report-file=html:C:/Users/Peter/Desktop/DE0/ROVER/ROVER.html --report-file=qip:C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/ROVER.qip --report-file=cmp:C:/Users/Peter/Desktop/DE0/ROVER/ROVER.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Peter/Desktop/DE0/ROVER/ROVER.qsys
+Progress: Loading ROVER/ROVER.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 12.1]
+Progress: Parameterizing module clk_50
+Progress: Adding timer [altera_avalon_timer 12.1]
+Progress: Parameterizing module timer
+Progress: Adding key [altera_avalon_pio 12.1]
+Progress: Parameterizing module key
+Progress: Adding sw [altera_avalon_pio 12.1]
+Progress: Parameterizing module sw
+Progress: Adding led [altera_avalon_pio 12.1]
+Progress: Parameterizing module led
+Progress: Adding i2c_scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding altpll_sys [altpll 12.1]
+Progress: Parameterizing module altpll_sys
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding adc_spi_read [TERASIC_ADC_READ 1.0]
+Progress: Parameterizing module adc_spi_read
+Progress: Adding select_i2c_clk [altera_avalon_pio 12.1]
+Progress: Parameterizing module select_i2c_clk
+Progress: Adding clock_crossing_io [altera_avalon_mm_clock_crossing_bridge 12.1]
+Progress: Parameterizing module clock_crossing_io
+Progress: Adding clock_crossing_io2 [altera_avalon_mm_clock_crossing_bridge 12.1]
+Progress: Parameterizing module clock_crossing_io2
+Progress: Adding cpu [altera_nios2_qsys 12.1]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding c0 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c0
+Progress: Adding c2 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c2
+Progress: Adding c4 [altera_clock_bridge 12.1]
+Progress: Parameterizing module c4
+Progress: Adding compass_i2c_sda [altera_avalon_pio 12.1]
+Progress: Parameterizing module compass_i2c_sda
+Progress: Adding compass_i2c_scl [altera_avalon_pio 12.1]
+Progress: Parameterizing module compass_i2c_scl
+Progress: Adding PWM_0 [PWM 1.0]
+Progress: Parameterizing module PWM_0
+Progress: Adding PWM_1 [PWM 1.0]
+Progress: Parameterizing module PWM_1
+Progress: Adding PWM_2 [PWM 1.0]
+Progress: Parameterizing module PWM_2
+Progress: Adding PWM_3 [PWM 1.0]
+Progress: Parameterizing module PWM_3
+Progress: Adding encoder_0a [encoder 1.0]
+Progress: Parameterizing module encoder_0a
+Progress: Adding encoder_0b [encoder 1.0]
+Progress: Parameterizing module encoder_0b
+Progress: Adding encoder_1a [encoder 1.0]
+Progress: Parameterizing module encoder_1a
+Progress: Adding encoder_1b [encoder 1.0]
+Progress: Parameterizing module encoder_1b
+Progress: Adding servo [servo 1.0]
+Progress: Parameterizing module servo
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ROVER.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER.cpu: CPUID control register value is 0. Please manually assign CPUID if creating multiple Nios II system
+Info: ROVER.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ROVER.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ROVER.compass_i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ROVER: Generating ROVER "ROVER" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 31 modules, 126 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 62 modules, 250 connections
+Info: merlin_domain_transform: After transform: 145 modules, 752 connections
+Info: merlin_router_transform: After transform: 176 modules, 876 connections
+Info: merlin_traffic_limiter_transform: After transform: 178 modules, 886 connections
+Info: merlin_burst_transform: After transform: 183 modules, 906 connections
+Info: reset_adaptation_transform: After transform: 187 modules, 708 connections
+Info: merlin_network_to_switch_transform: After transform: 247 modules, 832 connections
+Info: merlin_width_transform: After transform: 257 modules, 862 connections
+Info: Inserting clock-crossing logic between cmd_xbar_demux.src2 and cmd_xbar_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux.src3 and cmd_xbar_mux_003.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src2 and cmd_xbar_mux_002.sink1
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src3 and cmd_xbar_mux_009.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src5 and cmd_xbar_mux_011.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src8 and cmd_xbar_mux_014.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src9 and cmd_xbar_mux_015.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src10 and cmd_xbar_mux_016.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src11 and cmd_xbar_mux_017.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src12 and cmd_xbar_mux_018.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src13 and cmd_xbar_mux_019.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src14 and cmd_xbar_mux_020.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src15 and cmd_xbar_mux_021.sink0
+Info: Inserting clock-crossing logic between cmd_xbar_demux_002.src16 and cmd_xbar_mux_022.sink0
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src0 and rsp_xbar_mux.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_002.src1 and rsp_xbar_mux_002.sink2
+Info: Inserting clock-crossing logic between rsp_xbar_demux_003.src0 and rsp_xbar_mux.sink3
+Info: Inserting clock-crossing logic between rsp_xbar_demux_009.src0 and rsp_xbar_mux_002.sink3
+Info: Inserting clock-crossing logic between rsp_xbar_demux_011.src0 and rsp_xbar_mux_002.sink5
+Info: Inserting clock-crossing logic between rsp_xbar_demux_014.src0 and rsp_xbar_mux_002.sink8
+Info: Inserting clock-crossing logic between rsp_xbar_demux_015.src0 and rsp_xbar_mux_002.sink9
+Info: Inserting clock-crossing logic between rsp_xbar_demux_016.src0 and rsp_xbar_mux_002.sink10
+Info: Inserting clock-crossing logic between rsp_xbar_demux_017.src0 and rsp_xbar_mux_002.sink11
+Info: Inserting clock-crossing logic between rsp_xbar_demux_018.src0 and rsp_xbar_mux_002.sink12
+Info: Inserting clock-crossing logic between rsp_xbar_demux_019.src0 and rsp_xbar_mux_002.sink13
+Info: Inserting clock-crossing logic between rsp_xbar_demux_020.src0 and rsp_xbar_mux_002.sink14
+Info: Inserting clock-crossing logic between rsp_xbar_demux_021.src0 and rsp_xbar_mux_002.sink15
+Info: Inserting clock-crossing logic between rsp_xbar_demux_022.src0 and rsp_xbar_mux_002.sink16
+Info: com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: 285 modules, 1002 connections
+Info: limiter_update_transform: After transform: 285 modules, 1004 connections
+Info: merlin_interrupt_mapper_transform: After transform: 286 modules, 1007 connections
+Info: merlin_interrupt_sync_transform: After transform: 290 modules, 1027 connections
+Warning: ROVER: "No matching role found for epcs:epcs_control_port:endofpacket (endofpacket)"
+Warning: ROVER: "No matching role found for epcs:epcs_control_port:dataavailable (dataavailable)"
+Warning: ROVER: "No matching role found for epcs:epcs_control_port:readyfordata (readyfordata)"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0007_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0007_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0007_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:18 (*) Success: sopc_builder finished.
+Info: timer: "ROVER" instantiated altera_avalon_timer "timer"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0008_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0008_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0008_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:24 (*) Success: sopc_builder finished.
+Info: key: "ROVER" instantiated altera_avalon_pio "key"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0009_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0009_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0009_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0009_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0009_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:30 (*) Success: sopc_builder finished.
+Info: sw: "ROVER" instantiated altera_avalon_pio "sw"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0010_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0010_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0010_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0010_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0010_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:36 (*) Success: sopc_builder finished.
+Info: led: "ROVER" instantiated altera_avalon_pio "led"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0011_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0011_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0011_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0011_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0011_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:42 (*) Success: sopc_builder finished.
+Info: i2c_scl: "ROVER" instantiated altera_avalon_pio "i2c_scl"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0012_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0012_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0012_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0012_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0012_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:54:48 (*) Success: sopc_builder finished.
+Info: i2c_sda: "ROVER" instantiated altera_avalon_pio "i2c_sda"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0013_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0013_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0013_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0013_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0013_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+.
+# 2013.04.12 11:54:53 (*) Running Test Generator Program for ROVER_sdram
+# 2013.04.12 11:54:55 (*) Success: sopc_builder finished.
+Info: sdram: "ROVER" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: altpll_sys: "ROVER" instantiated altpll "altpll_sys"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0016_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0016_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0016_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0016_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0016_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:55:04 (*) Success: sopc_builder finished.
+Info: epcs: "ROVER" instantiated altera_avalon_epcs_flash_controller "epcs"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0017_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0017_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0017_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0017_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0017_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:55:11 (*) Success: sopc_builder finished.
+Info: jtag_uart: "ROVER" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: adc_spi_read: "ROVER" instantiated TERASIC_ADC_READ "adc_spi_read"
+Info: Starting classic module elaboration.
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0018_sopclgen  --no_splash --refresh C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0018_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+Info: Finished elaborating classic module.
+Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0018_sopclgen/yysystem.ptf
+Info: Running sopc_builder...
+"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0018_sopclgen  --generate C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0018_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"
+No .sopc_builder configuration file(!)
+.
+# 2013.04.12 11:55:16 (*) Success: sopc_builder finished.
+Info: select_i2c_clk: "ROVER" instantiated altera_avalon_pio "select_i2c_clk"
+Info: clock_crossing_io: "ROVER" instantiated altera_avalon_mm_clock_crossing_bridge "clock_crossing_io"
+Info: cpu: Starting RTL generation for module 'ROVER_cpu'
+Info: cpu:   Generation command is [exec C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/12.1sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/12.1sp1/quartus/sopc_builder/bin/europa -I C:/altera/12.1sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/12.1sp1/quartus/sopc_builder/bin -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=ROVER_cpu --dir=C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0019_cpu_gen/ --quartus_dir=C:/altera/12.1sp1/quartus --verilog --config=C:/Users/Peter/AppData/Local/Temp/alt5806_7633940380413288023.dir/0019_cpu_gen//ROVER_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: cpu: # 2013.04.12 11:55:20 (*) Starting Nios II generation
+Info: cpu: # 2013.04.12 11:55:20 (*)   Checking for plaintext license.
+Info: cpu: # 2013.04.12 11:55:21 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus
+Info: cpu: # 2013.04.12 11:55:21 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2013.04.12 11:55:21 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2013.04.12 11:55:21 (*)   Plaintext license not found.
+Info: cpu: # 2013.04.12 11:55:21 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2013.04.12 11:55:21 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2013.04.12 11:55:21 (*)   Creating all objects for CPU
+Info: cpu: # 2013.04.12 11:55:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2013.04.12 11:55:23 (*)   Creating plain-text RTL
+Info: cpu: # 2013.04.12 11:55:26 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ROVER_cpu'
+Info: cpu: "ROVER" instantiated altera_nios2_qsys "cpu"
+Info: sysid: "ROVER" instantiated altera_avalon_sysid_qsys "sysid"
+Info: PWM_0: "ROVER" instantiated PWM "PWM_0"
+Info: encoder_0a: "ROVER" instantiated encoder "encoder_0a"
+Info: servo: "ROVER" instantiated servo "servo"
+Info: cpu_instruction_master_translator: "ROVER" instantiated altera_merlin_master_translator "cpu_instruction_master_translator"
+Info: cpu_jtag_debug_module_translator: "ROVER" instantiated altera_merlin_slave_translator "cpu_jtag_debug_module_translator"
+Info: cpu_instruction_master_translator_avalon_universal_master_0_agent: "ROVER" instantiated altera_merlin_master_agent "cpu_instruction_master_translator_avalon_universal_master_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent: "ROVER" instantiated altera_merlin_slave_agent "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "ROVER" instantiated altera_avalon_sc_fifo "cpu_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "ROVER" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "ROVER" instantiated altera_merlin_router "addr_router_001"
+Info: addr_router_002: "ROVER" instantiated altera_merlin_router "addr_router_002"
+Info: id_router: "ROVER" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "ROVER" instantiated altera_merlin_router "id_router_001"
+Info: id_router_003: "ROVER" instantiated altera_merlin_router "id_router_003"
+Info: id_router_004: "ROVER" instantiated altera_merlin_router "id_router_004"
+Info: id_router_009: "ROVER" instantiated altera_merlin_router "id_router_009"
+Info: id_router_014: "ROVER" instantiated altera_merlin_router "id_router_014"
+Info: addr_router_003: "ROVER" instantiated altera_merlin_router "addr_router_003"
+Info: id_router_023: "ROVER" instantiated altera_merlin_router "id_router_023"
+Info: limiter: "ROVER" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "ROVER" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "ROVER" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "ROVER" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "ROVER" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_demux_002: "ROVER" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_002"
+Info: cmd_xbar_mux: "ROVER" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "ROVER" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_004: "ROVER" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_004"
+Info: rsp_xbar_mux: "ROVER" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "ROVER" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_002: "ROVER" instantiated altera_merlin_multiplexer "rsp_xbar_mux_002"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_xbar_demux_003: "ROVER" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_003"
+Info: rsp_xbar_demux_023: "ROVER" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_023"
+Info: rsp_xbar_mux_003: "ROVER" instantiated altera_merlin_multiplexer "rsp_xbar_mux_003"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "ROVER" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: crosser: "ROVER" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/Peter/Desktop/DE0/ROVER/ROVER/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: irq_mapper: "ROVER" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "ROVER" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: ROVER: Done ROVER" with 54 modules, 402 files, 7024571 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
